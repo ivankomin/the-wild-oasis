@@ -63,6 +63,7 @@ export default function CabinRow({ cabin }) {
     mutationFn: deleteCabin,
     onSuccess: () => {
       toast.success("Cabin successfully deleted");
+      //invalidate the query to refetch the data after deletion, since the cache is stale
       queryClient.invalidateQueries({
         queryKey: ["cabins"],
       });
