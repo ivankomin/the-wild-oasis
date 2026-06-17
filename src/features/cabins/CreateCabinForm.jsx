@@ -19,7 +19,6 @@ function CreateCabinForm({ cabinToEdit = {} }) {
 
   const { errors } = formState;
   const { isCreating, createCabin } = useCreateCabin();
-
   const { isEditing, editCabin } = useEditCabin();
 
   const isWorking = isCreating || isEditing;
