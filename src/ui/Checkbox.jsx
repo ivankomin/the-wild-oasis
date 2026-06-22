@@ -29,6 +29,7 @@ function Checkbox({ checked, onChange, disabled = false, id, children }) {
   return (
     <StyledCheckbox>
       <input
+        style={{ cursor: "pointer" }}
         type="checkbox"
         id={id}
         checked={checked}
